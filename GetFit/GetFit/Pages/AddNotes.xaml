@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetFit.AddNotes"
+             BackgroundColor="#81d8f0"
+             Title="Today's Plan">
+    <ContentPage.Content>
+        <ScrollView>
+                <StackLayout>
+                    <Label  Text="Workout Plan"
+                            Margin="5,20,0,0"
+                            FontFamily="MyFont"/>
+                    <Editor x:Name="editor"
+                            Text="{Binding WorkoutPlan}"
+                            HeightRequest="120"
+                            Placeholder="Enter today's Workout plan here"
+                            BackgroundColor="#bff2ff"/>
+                    <Label  Text="Meal Preparation"
+                            Margin="5,10,0,0"
+                            FontFamily="MyFont"/>
+                    <Editor Text="{Binding MealPlan}"
+                            HeightRequest="120"
+                            Placeholder="Enter today's Meal plan here"
+                            BackgroundColor="#bff2ff" Margin="0" InputTransparent="False"/>
+
+                    <Label  Text="Breakfast"
+                            Margin="5,10,0,0"
+                            FontFamily="MyFont"/>
+                    <Editor 
+                            Text="{Binding Breakfast}"
+                            HeightRequest="70"
+                            Placeholder="Add notes for your Breakfast here"
+                            BackgroundColor="#bff2ff"/>
+
+                    <Label  Text="Lunch"
+                            Margin="5,10,0,0"
+                            FontFamily="MyFont"/>
+                    <Editor 
+                            Text="{Binding Lunch}"
+                            HeightRequest="70"
+                            Placeholder="Add notes for your Lunch here"
+                            BackgroundColor="#bff2ff"/>
+
+                    <Label  Text="Dinner "
+                            Margin="5,10,0,0"
+                            FontFamily="MyFont"/>
+                    <Editor 
+                            Text="{Binding Dinner}"
+                            HeightRequest="70"
+                            Placeholder="Add notes for your Dinner here"
+                            BackgroundColor="#bff2ff"/>
+
+                    <Grid Margin="30">
+
+                        <Button BorderColor="Black"
+                                BorderWidth="0.5"
+                                Margin="4"
+                                Text="Save"
+                                Clicked="Save_Clicked"
+                                FontFamily="MyFont"/>
+                        <Button Grid.Column="1"
+                                Grid.Row="0"
+                                BorderColor="Black"
+                                BorderWidth="0.5"
+                                Margin="4"
+                                Text="Delete"
+                                Clicked="Delete_Clicked"
+                                FontFamily="MyFont"/>
+                    </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

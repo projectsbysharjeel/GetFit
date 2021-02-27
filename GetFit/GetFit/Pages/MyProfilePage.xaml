@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GetFit.Models"
+             x:Class="GetFit.MyProfilePage"
+             Title="Profile"
+             IconImageSource="Profile.png"
+             BackgroundColor="#81d8f0">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Image Source="myProfile.png"/>
+            <Label 
+                   Text="Sharjeel Sohail"
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,30"
+                   FontFamily="MyFont"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+
+                <Label  Text="Gender"
+                        FontFamily="MyFont"/>
+                <Entry  Grid.Column="1"
+                        Placeholder="male"
+                        WidthRequest="50"
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"/>
+
+                <Label  Grid.Row="1"
+                        FontFamily="MyFont"
+                        Text="Age" />
+                <Entry  
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Placeholder="18"
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"/>
+
+                <Label  Grid.Row="2"
+                        FontFamily="MyFont"
+                        Text="Goal" />
+                <Entry  Grid.Column="1"
+                        Grid.Row="2"
+                        
+                        Placeholder="lose weight"
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"/>
+
+                <Label  Grid.Row="3"
+                        FontFamily="MyFont"
+                        Text="Current Weight"/>
+                <Entry  Grid.Column="1"
+                        Grid.Row="3"
+                        Placeholder="83.9"
+                        
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"/>
+
+                <Label  Grid.Row="4"
+                        FontFamily="MyFont"
+                        Text="Goal Weight"/>
+                <Entry  Grid.Column="1"
+                        Grid.Row="4"
+                        Placeholder="75.0"
+                        
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"/>
+
+                <Label  Grid.Row="5"
+                        FontFamily="MyFont"
+                        Text="Activity Level"/>
+                <Entry  Grid.Column="1"
+                        Grid.Row="5"
+                        
+                        BackgroundColor="#81d8f0"
+                        IsReadOnly="True"
+                        Placeholder="active"/>
+            </Grid>
+
+            <Button
+                        BorderColor="Black"
+                        BorderWidth="0.5"
+                        Margin="20"
+                        HorizontalOptions="CenterAndExpand"
+                        WidthRequest="100"
+                        VerticalOptions="Center"
+                        Text="Edit"
+                        Clicked="Button_Clicked"
+                        FontFamily="MyFont"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetFit.ProgressPage"
+             Title="Progress"
+             IconImageSource="Progress.png"
+             BackgroundColor="#81d8f0">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Label Margin="10"
+                   Text="YOUR WEEKLY PLANNER"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   FontFamily="MyFont"
+                   HorizontalOptions="Center"/>
+            <StackLayout BackgroundColor="#53c2e0">
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="MONDAY"
+                           HorizontalOptions="Start"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="TUESDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="WEDNESDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="THURSDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="FRIDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="SATURDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#bff2ff">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Calender.png" HorizontalOptions="Start"/>
+                    <Label Grid.Column="1"
+                           Text="SUNDAY"
+                           HorizontalOptions="StartAndExpand"
+                           FontFamily="MyFont"
+                           Margin="5"/>
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Accelerometer\**" />
+    <EmbeddedResource Remove="Accelerometer\**" />
+    <None Remove="Accelerometer\**" />
+    <None Remove="Pages\EditProfile.xml" />
+    <None Remove="Resources\Images\Diary.png" />
+    <None Remove="Resources\Images\Home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.1.0.714" />
+    <PackageReference Include="Xam.Plugin.DeviceMotion" Version="1.1.2" />
+    <PackageReference Include="Plugin.DeviceSensors" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Fonts\JosefinSans-Regular.ttf" />
+    <None Remove="Resources\Fonts\JosefinSans-Light.ttf" />
+    <None Remove="Resources\Images\Calendar.png" />
+    <None Remove="Resources\Images\Walk.png" />
+    <None Remove="Resources\Images\Run.png" />
+    <None Remove="Resources\Images\myProfile.png" />
+    <None Remove="Resources\Images\RunSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\Calendar.png" />
+    <EmbeddedResource Include="Resources\Images\Walk.png" />
+    <EmbeddedResource Include="Resources\Images\Run.png" />
+    <EmbeddedResource Include="Resources\Images\myProfile.png" />
+    <EmbeddedResource Include="Resources\Images\RunSplash.png" />
+    <EmbeddedResource Include="Resources\Images\Diary.png" />
+    <EmbeddedResource Include="Resources\Images\Home.png" />
+  </ItemGroup>
+</Project>

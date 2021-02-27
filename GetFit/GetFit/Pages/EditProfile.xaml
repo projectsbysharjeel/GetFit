@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GetFit.Models"
+             x:Class="GetFit.Pages.EditProfile"
+             Title="Edit Profile"
+             BackgroundColor="#81d8f0">
+
+    <ContentPage.Content>
+        <StackLayout    Margin="20">
+
+                <Image      Source="myProfile.png"
+                        HorizontalOptions="Start"/>
+
+                <Label      Text="Sharjeel Sohail"
+                        HorizontalOptions="Start"
+                        FontAttributes="Bold"
+                        Margin="0,0,0,30"
+                        FontFamily="MyFont"/>
+
+                <Label  Text="Gender"
+                        FontFamily="MyFont"/>
+
+                <Entry  x:Name="EntGender"
+                        Placeholder="male / female"
+                        BackgroundColor="#81d8f0"/>
+
+                <Label  FontFamily="MyFont"
+                        Text="Age" />
+
+                <Entry  x:Name="EntAge"
+                        Placeholder="18"
+                        BackgroundColor="#81d8f0"/>
+                        
+                <Label  FontFamily="MyFont"
+                        Text="Goal" />
+
+                <Entry  x:Name="EntGoal"
+                        Placeholder="lose weight / maintain weight / gain weight"
+                        BackgroundColor="#81d8f0"/>
+
+                <Label  FontFamily="MyFont"
+                        Text="Current Weight"/>
+
+                <Entry  Placeholder="83.9"
+                        x:Name="EntCurrentWeight"
+                        Keyboard="Numeric"
+                        BackgroundColor="#81d8f0"/>
+
+                <Label  FontFamily="MyFont"
+                        Text="Goal Weight"/>
+
+                <Entry  Placeholder="75.0"
+                        x:Name="EntGoalWeight"
+                        Keyboard="Numeric"
+                        BackgroundColor="#81d8f0"/>
+
+                <Label  FontFamily="MyFont"
+                        Text="Activity Level"/>
+
+                <Entry  x:Name="EntActivityLevel"
+                        BackgroundColor="#81d8f0"
+                        Placeholder="Inactive / lightly active / very active"/>
+
+                <Button BorderColor="Black"
+                        BorderWidth="0.5"
+                        Margin="50"
+                        HorizontalOptions="CenterAndExpand"
+                        WidthRequest="100"
+                        VerticalOptions="Center"
+                        Text="Update"
+                        Clicked="Button_Clicked"
+                        FontFamily="MyFont"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

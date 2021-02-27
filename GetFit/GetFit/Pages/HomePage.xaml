@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GetFit.Models"
+             x:Class="GetFit.HomePage"
+             Title="Home"
+             IconImageSource="Home.png"
+             BackgroundColor="#81d8f0">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout    Margin="20">
+                <Label      Text="TODAY"
+                            x:Name="lblDay"
+                            Padding="0,30,0,0"
+                            HorizontalOptions="CenterAndExpand"
+                            FontSize="Title"
+                            FontFamily="MyFont"/>
+
+                <Frame      HeightRequest="150"
+                            WidthRequest="150"
+                            CornerRadius="75"
+                            HorizontalOptions="Center"
+                            Margin="20" Padding="0"
+                            BackgroundColor="#81d8f0">
+                    <Label  x:Name="lblSteps"
+                            Text="{Binding MySteps}"
+                            FontSize="Title"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            FontFamily="MyFont"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout    BackgroundColor="#bff2ff" >
+                <Grid       Margin="5">
+                    <Label  x:Name="lblCaloriesBurnt"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text="0"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="0"
+                            Grid.Row="1"
+                            Text="Calories"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="0"
+                            x:Name="lblTotalSteps"
+                            Text="0"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="1"
+                            Text="Steps"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout    BackgroundColor="#bff2ff">
+                <Label      Text="ACTIVITY REMAINING"
+                            FontFamily="MyFont"
+                            HorizontalOptions="Center"
+                            Margin="5"/>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="15"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Row="0"
+                            Source="Walk.png"
+                            HorizontalOptions="Center"/>
+                    <Label  Grid.Row="1"
+                            Text="Walk"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Row="2"
+                            Text="1.5hrs"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Image  Grid.Column="1"
+                            Grid.Row="0"
+                            Source="Run.png"
+                            HorizontalOptions="Center"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="1"
+                            Text="Run"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="2"
+                            Text="30mins"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                </Grid>
+            </StackLayout>
+
+            <Label          Text=" TODAY'S STORY"
+                            FontFamily="MyFont"
+                            Margin="0,20,0,0"/>
+
+            <StackLayout    BackgroundColor="#bff2ff" >
+                <Grid       Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  Grid.Column="0"
+                            Source="Run.png"
+                            HorizontalOptions="Start"/>
+                    <Label  Text="MODERATE ACTIVITY"
+                            Grid.Column="1"
+                            VerticalOptions="CenterAndExpand"/>
+                </Grid>
+                <Grid       Margin="5">
+                    <Label  Grid.Column="0"
+                            Grid.Row="1"
+                            x:Name="lblWalkCalorie"
+                            Text="0"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="0"
+                            Grid.Row="2"
+                            Text="Calories"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="1"
+                            x:Name="lblWalkSteps"
+                            Text="0"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="2"
+                            Text="Steps"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout    BackgroundColor="#bff2ff" >
+                <Grid       Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  Grid.Column="0"
+                            Source="Walk.png"
+                            HorizontalOptions="Start"/>
+                    <Label  Text="LIGHT ACTIVITY"
+                            Grid.Column="1"
+                            VerticalOptions="CenterAndExpand"/>
+                </Grid>
+                <Grid       Margin="0,0,0,5">
+
+                    <Label  Grid.Column="0"
+                            Grid.Row="1"
+                            Text="0"
+                            x:Name="lblRunCalorie"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="0"
+                            Grid.Row="2"
+                            Text="Calories"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="2"
+                            Text="Steps"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    <Label  Grid.Column="1"
+                            Grid.Row="1"
+                            x:Name="lblRunSteps"
+                            Text="0"
+                            HorizontalTextAlignment="Center"
+                            FontFamily="MyFont"/>
+                    
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
